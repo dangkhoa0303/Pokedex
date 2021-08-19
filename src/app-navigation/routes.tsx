@@ -32,7 +32,7 @@ const WrapperComponent = ({
 );
 
 // class to contain all routes --> avoid hard-coding route names
-class Routes {
+export class Routes {
   public static PokemonList = 'pokemon-list';
   public static PokemonDetails = 'pokemon-details';
 }

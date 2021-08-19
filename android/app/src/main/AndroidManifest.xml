@@ -2,6 +2,7 @@
   package="com.pokedex">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
 
     <application
       android:name=".MainApplication"

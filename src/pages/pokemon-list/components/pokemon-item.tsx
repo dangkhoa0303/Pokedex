@@ -3,6 +3,7 @@ import PokemonListModel from '../pokemon-list-model';
 import {Image, TouchableOpacity, View} from 'react-native';
 import {Card, Text} from 'react-native-paper';
 import {navigate} from '../../../app-navigation/router';
+import {Routes} from '../../../app-navigation/routes';
 
 interface ListItemProps {
   // must be specified when this component is used (for navigation purpose)
@@ -55,9 +56,13 @@ export default class PokemonItem extends Component<ListItemProps, any> {
           </View>
           <TouchableOpacity
             onPress={() =>
-              navigate(this.props.navigationComponentId, 'pokemon-details', {
-                pokemonId: pokemon.id,
-              })
+              navigate(
+                this.props.navigationComponentId,
+                Routes.PokemonDetails,
+                {
+                  pokemonId: pokemon.id,
+                },
+              )
             }>
             <View
               style={{

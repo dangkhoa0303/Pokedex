@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {Text} from 'react-native-paper';
+import {Searchbar, Text} from 'react-native-paper';
 import {isLoadingPokemons, PokemonListState} from './pokemon-list-reducer';
 import {AppState} from '../../app-state-store';
 import {ThunkDispatch} from 'redux-thunk';
@@ -48,6 +48,7 @@ class PokemonList extends Component<PokemonListProps, any> {
 
     return (
       <>
+        <Searchbar placeholder="sss" value="aa" />
         {/** Pokemon list -- display when pokemons are loaded */}
         {isLoadingPokemons(PokemonListLocalState) ? (
           <Text>Loading ...</Text>
@@ -57,6 +58,7 @@ class PokemonList extends Component<PokemonListProps, any> {
             data={PokemonListLocalState.pokemons}
             renderItem={({item}) => (
               <PokemonItem
+                key={item.id}
                 navigationComponentId={this.props.componentId}
                 pokemon={item}
               />

@@ -18,3 +18,11 @@ export const navigate = (
     },
   });
 };
+
+/**
+ * Pop to root from a screen
+ * @param componentId
+ */
+export const popToRoot = (componentId: string) => {
+  Navigation.popToRoot(componentId);
+};

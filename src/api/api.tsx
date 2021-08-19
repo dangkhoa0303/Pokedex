@@ -93,7 +93,6 @@ export default class Api {
         },
       };
       let response: AxiosResponse = await axios.request(config);
-
       return this.parseResponse(response);
     } catch (exception) {
       const error = Api.parseError(exception);

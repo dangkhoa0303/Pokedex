@@ -7,6 +7,7 @@ import PokemonEndpoints from '../../api/pokemon-endpoints';
 export enum PokemonDetailsEvents {
   LoadingPokemonDetails = 'PokemonDetailsEvents.LoadingPokemonDetails',
   CompleteLoadingPokemonDetails = 'PokemonDetailsEvents.CompleteLoadingPokemonDetails',
+  SelectSpriteMode = 'PokemonDetailsEvents.SelectSpriteMode',
 }
 
 export interface PokemonDetailsAction extends Action {}
@@ -15,6 +16,14 @@ export interface CompleteLoadingPokemonDetailsAction
   extends PokemonDetailsAction {
   pokemon?: PokemonModel;
   error?: string;
+}
+
+export interface SelectSpriteModeAction extends PokemonDetailsAction {
+  spriteMode:
+    | 'frontDefault'
+    | 'frontShiny'
+    | 'frontFemale'
+    | 'frontShinyFemale';
 }
 
 export const loadPokemon: ActionCreator<any> = (idOrName: string) => {
@@ -39,5 +48,17 @@ export const loadPokemon: ActionCreator<any> = (idOrName: string) => {
       completeAction.error = error.toString();
       return dispatch(completeAction);
     }
+  };
+};
+
+export const selectSpriteMode = (
+  sprite: 'frontDefault' | 'frontShiny' | 'frontFemale' | 'frontShinyFemale',
+) => {
+  return (dispatch: Dispatch, getState: () => AppState) => {
+    const action: SelectSpriteModeAction = {
+      type: PokemonDetailsEvents.SelectSpriteMode,
+      spriteMode: sprite,
+    };
+    return dispatch(action);
   };
 };

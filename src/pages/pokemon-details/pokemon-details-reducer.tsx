@@ -3,16 +3,23 @@ import {
   CompleteLoadingPokemonDetailsAction,
   PokemonDetailsAction,
   PokemonDetailsEvents,
+  SelectSpriteModeAction,
 } from './pokemon-details-actions';
 
 export interface PokemonDetailsState {
   loadingPokemonDetails: boolean;
   pokemon?: PokemonModel;
+  spriteMode:
+    | 'frontDefault'
+    | 'frontShiny'
+    | 'frontFemale'
+    | 'frontShinyFemale';
   error?: string;
 }
 
 const initialState: PokemonDetailsState = {
   loadingPokemonDetails: false,
+  spriteMode: 'frontDefault',
 };
 
 export const isLoadingPokemonDetails = (state: PokemonDetailsState) => {
@@ -26,10 +33,8 @@ const pokemonDetailsReducer = (
   switch (action.type) {
     case PokemonDetailsEvents.LoadingPokemonDetails:
       return {
-        ...state,
+        ...initialState,
         loadingPokemonDetails: true,
-        pokemon: undefined,
-        error: undefined,
       };
     case PokemonDetailsEvents.CompleteLoadingPokemonDetails:
       const completeLoadingPokemonDetailsAction: CompleteLoadingPokemonDetailsAction =
@@ -39,6 +44,13 @@ const pokemonDetailsReducer = (
         loadingPokemonDetails: false,
         pokemon: completeLoadingPokemonDetailsAction.pokemon ?? state.pokemon,
         error: completeLoadingPokemonDetailsAction.error ?? state.error,
+      };
+    case PokemonDetailsEvents.SelectSpriteMode:
+      const selectSpriteModeAction: SelectSpriteModeAction =
+        action as SelectSpriteModeAction;
+      return {
+        ...state,
+        spriteMode: selectSpriteModeAction.spriteMode,
       };
     default:
       return state;
