@@ -11,7 +11,7 @@ export interface RequestOptionalParams {
 }
 
 export default class Api {
-  baseUrl: string = 'https://pokeapi.co/api/v2/pokemon';
+  baseUrl: string = 'https://pokeapi.co/api/v2';
 
   /**
    * Build request URL
