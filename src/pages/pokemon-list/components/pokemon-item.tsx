@@ -4,6 +4,7 @@ import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {Card, Text} from 'react-native-paper';
 import {navigate} from '../../../app-navigation/router';
 import {Routes} from '../../../app-navigation/routes';
+import {constructPokemonSpriteUrl} from "../../../utils/utils";
 
 interface ListItemProps {
   // must be specified when this component is used (for navigation purpose)
@@ -24,9 +25,7 @@ export default class PokemonItem extends Component<ListItemProps, any> {
           <View style={styles.itemHeader}>
             <Image
               style={styles.pokeBallHeader}
-              source={{
-                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Menu%20Icons/btn_action_menu.png',
-              }}
+              source={require('../../../../assets/images/pokeball_color.png')}
             />
             <View
               style={{
@@ -52,15 +51,13 @@ export default class PokemonItem extends Component<ListItemProps, any> {
               {/** PokeBall background */}
               <Image
                 style={styles.itemBodyPokeBallBg}
-                source={{
-                  uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Loading%20Spinner/SpinnerSpriteSheet_Unity_0.png',
-                }}
+                source={require('../../../../assets/images/pokeball_white.png')}
               />
               {/** Pokemon sprite */}
               <Image
                 style={styles.pokemonSprite}
                 source={{
-                  uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`,
+                  uri: constructPokemonSpriteUrl(pokemon.id),
                 }}
               />
             </View>

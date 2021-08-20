@@ -85,7 +85,7 @@ export default class Api {
       const config: AxiosRequestConfig = {
         method: requestType,
         url: url,
-        timeout: 5000, // timeout in 20 seconds
+        timeout: 20000, // timeout in 20 seconds
         headers: {
           'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',

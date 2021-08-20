@@ -24,7 +24,7 @@ const WrapperComponent = ({
 }) => (
   <Provider store={appStateStore}>
     <PaperProvider>
-      <SafeAreaView>
+      <SafeAreaView style={{flex: 1}}>
         <Component {...rest} />
       </SafeAreaView>
     </PaperProvider>

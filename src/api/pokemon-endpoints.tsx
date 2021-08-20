@@ -12,9 +12,12 @@ export default class PokemonEndpoints {
     return new Promise(
       async (resolve: (pokemons: PokemonListModel[]) => void, reject) => {
         try {
+          // query list of pokemons from /pokemon endpoint
           const response: any = await new Api().request('get', '/pokemon', {
             queryParameters: {
+              // offset = index to the next page (pagination)
               offset: offset || 0,
+              // set hard limit for each query
               limit: 21,
             },
           });
@@ -139,10 +142,10 @@ export default class PokemonEndpoints {
           // query pokemon id associated with each evolution which is not included in the api in the first call
           await Promise.all(
             flattenedEvoChains.map(evoChain => {
-              return new Promise(async (resolve, _) => {
+              return new Promise(async (resolve1, _) => {
                 await Promise.all(
                   evoChain.map(evo => {
-                    return new Promise(async (resolve1, _1) => {
+                    return new Promise(async (resolve2, _1) => {
                       const evoPokemonResponse: any = await new Api().request(
                         'get',
                         `/pokemon/${evo.species}`,
@@ -152,11 +155,11 @@ export default class PokemonEndpoints {
                       // get default sprite
                       evo.sprite =
                         evoPokemonResponse.data.sprites.front_default;
-                      return resolve1(flattenedEvoChains);
+                      return resolve2(flattenedEvoChains);
                     });
                   }),
                 );
-                return resolve(flattenedEvoChains);
+                return resolve1(flattenedEvoChains);
               });
             }),
           );

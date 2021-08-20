@@ -1,5 +1,5 @@
 import {Navigation} from 'react-native-navigation';
-import {registerScreens} from './src/app-navigation/routes';
+import {registerScreens, Routes} from './src/app-navigation/routes';
 
 Navigation.events().registerAppLaunchedListener(async () => {
   registerScreens();
@@ -10,7 +10,7 @@ Navigation.events().registerAppLaunchedListener(async () => {
         children: [
           {
             component: {
-              name: 'pokemon-list',
+              name: Routes.PokemonList,
             },
           },
         ],

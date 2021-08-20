@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {
-  Dimensions,
   Image,
   ImageBackground,
   ScrollView,
@@ -13,11 +12,19 @@ import {ThunkDispatch} from 'redux-thunk';
 import {AnyAction} from 'redux';
 import {AppState} from '../../app-state-store';
 import {
+  hasErrorLoadingPokemonDetails,
+  hasSuccessfullyLoadedPokemonDetails,
   isLoadingPokemonDetails,
   PokemonDetailsState,
 } from './pokemon-details-reducer';
 import {loadPokemon, selectSpriteMode} from './pokemon-details-actions';
-import {Headline, Paragraph, Text} from 'react-native-paper';
+import {
+  ActivityIndicator,
+  Button,
+  Headline,
+  Paragraph,
+  Text,
+} from 'react-native-paper';
 import {NavigationComponentProps, Options} from 'react-native-navigation';
 import PokemonModel, {Evolution} from './pokemon-model';
 // @ts-ignore
@@ -70,7 +77,8 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
 
   render() {
     // eslint-disable-next-line no-shadow
-    const {PokemonDetailsLocalState, selectSpriteMode} = this.props;
+    const {pokemonId, PokemonDetailsLocalState, loadPokemon, selectSpriteMode} =
+      this.props;
     // obtain the pokemon from state
     const pokemon: PokemonModel | undefined = PokemonDetailsLocalState.pokemon;
 
@@ -98,311 +106,318 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
       uiEvolutionChains.push(uiEvoChain);
     });
 
-    return isLoadingPokemonDetails(PokemonDetailsLocalState) ? null : (
-      <View style={styles.container}>
-        <ScrollView style={styles.scrollView}>
-          {/** Space from top */}
-          <View
-            style={{
-              height: 20,
-            }}
-          />
+    return (
+      <View style={[styles.container, styles.centered]}>
+        {/** Indicator - display when pokemon details are being loaded */}
+        {isLoadingPokemonDetails(PokemonDetailsLocalState) ? (
+          <ActivityIndicator />
+        ) : null}
 
-          {/** Pokemon image section */}
-          <View
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              justifyContent: 'center',
-            }}>
-            {/** Pokemon sprite */}
-            <Image
+        {/** Error section - display when pokemon details fail to be loaded */}
+        {!hasErrorLoadingPokemonDetails(PokemonDetailsLocalState) ? null : (
+          <View style={[styles.col, styles.centered]}>
+            <Text style={styles.errorText}>
+              Error happens. Please try again!
+            </Text>
+            <View style={{height: 15}} />
+            {/** Button to retry loading pokemons */}
+            <Button
+              mode="contained"
+              color="#FF3333"
+              uppercase={false}
+              onPress={() => loadPokemon(pokemonId.toString())}>
+              Retry
+            </Button>
+          </View>
+        )}
+
+        {/** Pokemon details section - display ONLY when pokemon details are successfully loaded */}
+        {!hasSuccessfullyLoadedPokemonDetails(
+          PokemonDetailsLocalState,
+        ) ? null : (
+          <ScrollView
+            style={styles.scrollView}
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}>
+            {/** Space from top */}
+            <View
               style={{
-                height: 200,
-                width: 200,
-              }}
-              source={{
-                uri: pokemon.sprites[PokemonDetailsLocalState.spriteMode],
+                height: 20,
               }}
             />
-          </View>
 
-          {/** Sprite modes section */}
-          <View style={[styles.row, styles.centered, {marginBottom: 18}]}>
-            {pokemon.isGenderless ? (
-              <View style={[styles.row, styles.centered]}>
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontDefault')}>
-                  <Image
-                    style={
-                      PokemonDetailsLocalState.spriteMode === 'frontDefault'
-                        ? styles.spriteIconSelected
-                        : styles.spriteIcon
-                    }
-                    source={{
-                      uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/genderless_l.png',
-                    }}
-                  />
-                </TouchableOpacity>
-
-                <View style={{width: 20}} />
-
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontShiny')}>
-                  <View>
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode === 'frontShiny'
-                          ? styles.spriteIconSelected
-                          : styles.spriteIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/genderless_l.png',
-                      }}
-                    />
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode === 'frontShiny'
-                          ? styles.miniShinyIconSelected
-                          : styles.miniShinyIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/shiny_icon.png',
-                      }}
-                    />
-                  </View>
-                </TouchableOpacity>
-              </View>
-            ) : (
-              <View style={[styles.row, styles.centered]}>
-                {/** Male (default) sprite */}
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontDefault')}>
-                  <Image
-                    style={
-                      PokemonDetailsLocalState.spriteMode === 'frontDefault'
-                        ? styles.spriteIconSelected
-                        : styles.spriteIcon
-                    }
-                    source={{
-                      uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/male_l.png',
-                    }}
-                  />
-                </TouchableOpacity>
-
-                <View style={{width: 20}} />
-
-                {/** Male shiny sprite */}
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontShiny')}>
-                  <View>
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode === 'frontShiny'
-                          ? styles.spriteIconSelected
-                          : styles.spriteIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/male_l.png',
-                      }}
-                    />
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode === 'frontShiny'
-                          ? styles.miniShinyIconSelected
-                          : styles.miniShinyIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/shiny_icon.png',
-                      }}
-                    />
-                  </View>
-                </TouchableOpacity>
-
-                <View style={{width: 20}} />
-
-                {/** Female sprite */}
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontFemale')}>
-                  <Image
-                    style={
-                      PokemonDetailsLocalState.spriteMode === 'frontFemale'
-                        ? styles.spriteIconSelected
-                        : styles.spriteIcon
-                    }
-                    source={{
-                      uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/female_l.png',
-                    }}
-                  />
-                </TouchableOpacity>
-
-                <View style={{width: 20}} />
-
-                {/** Female shiny sprite */}
-                <TouchableOpacity
-                  onPress={() => selectSpriteMode('frontShinyFemale')}>
-                  <View>
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode ===
-                        'frontShinyFemale'
-                          ? styles.spriteIconSelected
-                          : styles.spriteIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/female_l.png',
-                      }}
-                    />
-                    <Image
-                      style={
-                        PokemonDetailsLocalState.spriteMode ===
-                        'frontShinyFemale'
-                          ? styles.miniShinyIconSelected
-                          : styles.miniShinyIcon
-                      }
-                      source={{
-                        uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/shiny_icon.png',
-                      }}
-                    />
-                  </View>
-                </TouchableOpacity>
-              </View>
-            )}
-          </View>
-
-          {/** Name section */}
-          <View style={[styles.row, styles.centered]}>
-            <Image
-              style={{width: 24, height: 24}}
-              source={{
-                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Loading%20Spinner/SpinnerSpriteSheet_Unity_0.png',
-              }}
-            />
-            <View style={{width: 12}} />
-            <Headline style={{color: 'white', fontWeight: '400'}}>
-              {('00' + pokemon.id).slice(-3) + ' ' + pokemon.name.toUpperCase()}
-            </Headline>
-          </View>
-
-          {/** Info section */}
-          <View
-            style={[
-              styles.row,
-              styles.centered,
-              {justifyContent: 'space-between', marginTop: 8},
-            ]}>
-            {/** Weight text */}
-            <Text style={{color: 'white', fontWeight: '500', fontSize: 13}}>
-              WEIGHT: {Number(pokemon.weight / 10).toFixed(1)}kg
-            </Text>
-            {/** Height text */}
-            <Text style={{color: 'white', fontWeight: '500', fontSize: 13}}>
-              HEIGHT: {Number(pokemon.height / 10).toFixed(1)}m
-            </Text>
-            {/** Type(s) text */}
-            <Text style={{color: 'white', fontWeight: '500', fontSize: 13}}>
-              {`TYPE: ${pokemon.types[0].toUpperCase()} ${
-                pokemon.types.length === 1
-                  ? ''
-                  : `/${pokemon.types[1].toUpperCase()}`
-              }`}
-            </Text>
-          </View>
-
-          {/** Description section */}
-          <View
-            style={[
-              styles.col,
-              {marginTop: 14, marginLeft: 8, marginRight: 8},
-            ]}>
-            {/** Pokemon gene type text */}
-            <Text style={styles.sectionTitle}>
-              {pokemon.genus.toUpperCase()}
-            </Text>
-            <View style={{height: 4}} />
-            {/** Description text */}
-            <Paragraph style={{color: '#DEDFFF'}}>
-              {pokemon.description}
-            </Paragraph>
-          </View>
-
-          {/** Divider */}
-          <View style={[styles.row, styles.centered]}>
-            <View style={styles.divider} />
-          </View>
-
-          {/** Evolution section */}
-          <View style={[styles.col, styles.centered, {paddingBottom: 150}]}>
-            {/** Evolution section title */}
-            <Text style={styles.sectionTitle}>EVOLUTION</Text>
-            <View style={{height: 12}} />
-            {/** Evolution chains section */}
-            <View style={[styles.col]}>
-              {
-                // iterate through each evolution chain
-                uiEvolutionChains.map((evoChain, index) => (
-                  // evolution chain row
-                  <View
-                    key={index}
-                    style={[styles.row, {justifyContent: 'space-around'}]}>
-                    {evoChain.map((evo, index1) => (
-                      <View key={index1} style={[styles.col, styles.centered]}>
-                        {/** each pokemon in the evolution chain */}
-                        {evo.pokemonId === -1 ? null : (
-                          // pokemon sprite + text view
-                          <TouchableOpacity
-                            onPress={() =>
-                              navigate(
-                                this.props.componentId,
-                                Routes.PokemonDetails,
-                                {pokemonId: evo.pokemonId},
-                              )
-                            }>
-                            <View style={[styles.col, styles.centered]}>
-                              <Image
-                                style={{width: 94, height: 94}}
-                                source={{uri: evo.sprite}}
-                              />
-                              <Text
-                                style={{
-                                  color: 'white',
-                                  fontWeight: '500',
-                                  fontSize: 12.5,
-                                }}>
-                                {evo.species.toUpperCase()}
-                              </Text>
-                            </View>
-                          </TouchableOpacity>
-                        )}
-
-                        <View style={{height: 3}} />
-
-                        {/** arrow pointing to the next pokemon in the evolution chain */}
-                        {evo.pokemonId !== -1 ? null : (
-                          <MaterialIcons
-                            name="east"
-                            color="white"
-                            size={35}
-                            style={{marginLeft: 10, marginRight: 10}}
-                          />
-                        )}
-                      </View>
-                    ))}
-                  </View>
-                ))
-              }
+            {/** Pokemon sprite section */}
+            <View style={[styles.row, styles.centered]}>
+              {/** Pokemon sprite */}
+              <Image
+                style={styles.mainSpriteImg}
+                source={{
+                  uri: pokemon.sprites[PokemonDetailsLocalState.spriteMode],
+                }}
+              />
             </View>
-          </View>
-        </ScrollView>
+
+            {/** Sprite modes section */}
+            <View style={[styles.row, styles.centered, {marginBottom: 18}]}>
+              {pokemon.isGenderless ? (
+                <View style={[styles.row, styles.centered]}>
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontDefault')}>
+                    <Image
+                      style={
+                        PokemonDetailsLocalState.spriteMode === 'frontDefault'
+                          ? styles.spriteIconSelected
+                          : styles.spriteIcon
+                      }
+                      source={require('../../../assets/images/genderless_l.png')}
+                    />
+                  </TouchableOpacity>
+
+                  <View style={{width: 20}} />
+
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontShiny')}>
+                    <View>
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode === 'frontShiny'
+                            ? styles.spriteIconSelected
+                            : styles.spriteIcon
+                        }
+                        source={require('../../../assets/images/genderless_l.png')}
+                      />
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode === 'frontShiny'
+                            ? styles.miniShinyIconSelected
+                            : styles.miniShinyIcon
+                        }
+                        source={require('../../../assets/images/shiny_icon.png')}
+                      />
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              ) : (
+                <View style={[styles.row, styles.centered]}>
+                  {/** Male (default) sprite */}
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontDefault')}>
+                    <Image
+                      style={
+                        PokemonDetailsLocalState.spriteMode === 'frontDefault'
+                          ? styles.spriteIconSelected
+                          : styles.spriteIcon
+                      }
+                      source={require('../../../assets/images/male_l.png')}
+                    />
+                  </TouchableOpacity>
+
+                  <View style={{width: 20}} />
+
+                  {/** Male shiny sprite */}
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontShiny')}>
+                    <View>
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode === 'frontShiny'
+                            ? styles.spriteIconSelected
+                            : styles.spriteIcon
+                        }
+                        source={require('../../../assets/images/male_l.png')}
+                      />
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode === 'frontShiny'
+                            ? styles.miniShinyIconSelected
+                            : styles.miniShinyIcon
+                        }
+                        source={require('../../../assets/images/shiny_icon.png')}
+                      />
+                    </View>
+                  </TouchableOpacity>
+
+                  <View style={{width: 20}} />
+
+                  {/** Female sprite */}
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontFemale')}>
+                    <Image
+                      style={
+                        PokemonDetailsLocalState.spriteMode === 'frontFemale'
+                          ? styles.spriteIconSelected
+                          : styles.spriteIcon
+                      }
+                      source={require('../../../assets/images/female_l.png')}
+                    />
+                  </TouchableOpacity>
+
+                  <View style={{width: 20}} />
+
+                  {/** Female shiny sprite */}
+                  <TouchableOpacity
+                    onPress={() => selectSpriteMode('frontShinyFemale')}>
+                    <View>
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode ===
+                          'frontShinyFemale'
+                            ? styles.spriteIconSelected
+                            : styles.spriteIcon
+                        }
+                        source={require('../../../assets/images/female_l.png')}
+                      />
+                      <Image
+                        style={
+                          PokemonDetailsLocalState.spriteMode ===
+                          'frontShinyFemale'
+                            ? styles.miniShinyIconSelected
+                            : styles.miniShinyIcon
+                        }
+                        source={require('../../../assets/images/shiny_icon.png')}
+                      />
+                    </View>
+                  </TouchableOpacity>
+                </View>
+              )}
+            </View>
+
+            {/** Name section */}
+            <View style={[styles.row, styles.centered]}>
+              <Image
+                style={{width: 30, height: 30}}
+                source={require('../../../assets/images/pokeball_white.png')}
+              />
+              <View style={{width: 12}} />
+              <Headline
+                style={{color: 'white', fontWeight: '500', fontSize: 26}}>
+                {('00' + pokemon.id).slice(-3) +
+                  ' ' +
+                  pokemon.name.toUpperCase()}
+              </Headline>
+            </View>
+
+            <View style={{height: 15}} />
+
+            {/** Basic info section */}
+            <View
+              style={[
+                styles.row,
+                styles.centered,
+                {justifyContent: 'space-around'},
+              ]}>
+              {/** Weight text */}
+              <Text style={styles.basicInfoText}>
+                WEIGHT: {Number(pokemon.weight / 10).toFixed(1)}kg
+              </Text>
+              {/** Height text */}
+              <Text style={styles.basicInfoText}>
+                HEIGHT: {Number(pokemon.height / 10).toFixed(1)}m
+              </Text>
+              {/** Type(s) text */}
+              <Text style={styles.basicInfoText}>
+                {`TYPE: ${pokemon.types[0].toUpperCase()} ${
+                  pokemon.types.length === 1
+                    ? ''
+                    : `/${pokemon.types[1].toUpperCase()}`
+                }`}
+              </Text>
+            </View>
+
+            <View style={{height: 25}} />
+
+            {/** Description section */}
+            <View style={[styles.col, {marginLeft: 8, marginRight: 8}]}>
+              {/** Pokemon gene type text */}
+              <Text style={styles.sectionTitle}>
+                {pokemon.genus.toUpperCase()}
+              </Text>
+              <View style={{height: 6}} />
+              {/** Description text */}
+              <Paragraph
+                style={{color: '#D8DFFF', fontSize: 15.5, fontWeight: '500'}}>
+                {pokemon.description}
+              </Paragraph>
+            </View>
+
+            {/** Divider */}
+            <View style={[styles.row, styles.centered]}>
+              <View style={styles.divider} />
+            </View>
+
+            {/** Evolution section */}
+            <View style={[styles.col, styles.centered, {paddingBottom: 150}]}>
+              {/** Evolution section title */}
+              <Text style={styles.sectionTitle}>EVOLUTION</Text>
+              <View style={{height: 12}} />
+              {/** Evolution chains section */}
+              <View style={[styles.col]}>
+                {
+                  // iterate through each evolution chain
+                  uiEvolutionChains.map((evoChain, index) => (
+                    // evolution chain row
+                    <View
+                      key={index}
+                      style={[styles.row, {justifyContent: 'space-around'}]}>
+                      {evoChain.map((evo, index1) => (
+                        <View
+                          key={index1}
+                          style={[styles.col, styles.centered]}>
+                          {/** each pokemon in the evolution chain */}
+                          {evo.pokemonId === -1 ? null : (
+                            // pokemon sprite + text view
+                            <TouchableOpacity
+                              onPress={() =>
+                                navigate(
+                                  this.props.componentId,
+                                  Routes.PokemonDetails,
+                                  {pokemonId: evo.pokemonId},
+                                )
+                              }>
+                              <View style={[styles.col, styles.centered]}>
+                                <Image
+                                  style={{width: 94, height: 94}}
+                                  source={{uri: evo.sprite}}
+                                />
+                                <Text
+                                  style={{
+                                    color: 'white',
+                                    fontWeight: '500',
+                                    fontSize: 13.2,
+                                  }}>
+                                  {evo.species.toUpperCase()}
+                                </Text>
+                              </View>
+                            </TouchableOpacity>
+                          )}
+
+                          <View style={{height: 3}} />
+
+                          {/** arrow pointing to the next pokemon in the evolution chain */}
+                          {evo.pokemonId !== -1 ? null : (
+                            <MaterialIcons
+                              name="east"
+                              color="white"
+                              size={35}
+                              style={{marginLeft: 10, marginRight: 10}}
+                            />
+                          )}
+                        </View>
+                      ))}
+                    </View>
+                  ))
+                }
+              </View>
+            </View>
+          </ScrollView>
+        )}
 
         {/** Close button */}
         <View style={styles.closeBtnContainer}>
           <TouchableOpacity onPress={() => popToRoot(this.props.componentId)}>
             <Image
-              style={{width: 38, height: 38}}
-              source={{
-                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Menu%20Icons/btn_close_normal.png',
-              }}
+              style={styles.closeBtn}
+              source={require('../../../assets/images/btn_close_normal.png')}
             />
           </TouchableOpacity>
         </View>
@@ -410,17 +425,13 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
         {/** Gradient image background */}
         <ImageBackground
           style={[styles.fixed, styles.container]}
-          source={{
-            uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/ui_bg_purple_02.png',
-          }}
+          source={require('../../../assets/images/ui_bg_purple_02.png')}
         />
 
         {/** Holo-net image background */}
         <Image
-          style={[styles.fixed, styles.container, {opacity: 0.35}]}
-          source={{
-            uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokedex/Holo_NetPatternBG.png',
-          }}
+          style={[styles.fixed, styles.container, {opacity: 0.3}]}
+          source={require('../../../assets/images/Holo_NetPatternBG.png')}
         />
       </View>
     );
@@ -431,8 +442,8 @@ export default connect(mapStateToProps, mapDispatchToProps)(PokemonDetails);
 
 const styles = StyleSheet.create({
   container: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
+    width: '100%',
+    height: '100%',
     zIndex: -1,
   },
   fixed: {
@@ -457,51 +468,70 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  mainSpriteImg: {
+    height: 250,
+    width: 250,
+  },
   divider: {
     backgroundColor: 'white',
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 24,
+    marginBottom: 24,
     height: 1,
     width: '80%',
   },
+  basicInfoText: {
+    color: 'white',
+    fontWeight: '500',
+    fontSize: 13.2,
+  },
   sectionTitle: {
     color: 'white',
-    fontSize: 16.5,
+    fontSize: 18.5,
     fontWeight: '500',
   },
   spriteIcon: {
-    width: 23,
-    height: 23,
+    width: 28,
+    height: 28,
   },
   miniShinyIcon: {
     position: 'absolute',
-    bottom: -5,
-    right: -5,
-    width: 14,
-    height: 14,
+    bottom: -3,
+    right: -3,
+    width: 15,
+    height: 15,
     zIndex: 1,
   },
   spriteIconSelected: {
-    width: 30,
-    height: 30,
+    width: 36,
+    height: 36,
   },
   miniShinyIconSelected: {
     position: 'absolute',
-    bottom: -4,
-    right: -4,
-    width: 17,
-    height: 17,
+    bottom: -3,
+    right: -3,
+    width: 18,
+    height: 18,
     zIndex: 1,
   },
   closeBtnContainer: {
     flex: 1,
     flexDirection: 'row',
     position: 'absolute',
-    bottom: 75,
+    bottom: 12,
     left: 0,
     right: 0,
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 100,
+  },
+  closeBtn: {
+    width: 52,
+    height: 52,
+  },
+  errorText: {
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#FF3333',
   },
 });

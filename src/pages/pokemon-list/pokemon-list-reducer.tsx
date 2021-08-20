@@ -32,19 +32,39 @@ const initialState: PokemonListState = {
   pokemons: [],
 };
 
+// state function to check if pokemons are being loaded
 export const isLoadingPokemons = (state: PokemonListState) => {
   return state.loadingPokemons;
 };
 
+// state function to check if pokemon is being searched
 export const isSearchingPokemon = (state: PokemonListState) => {
   return state.searchingPokemon;
 };
 
+// state function to check if the screen is in search mode
+// search mode means the pokemon has been successfully found
 export const isInSearchMode = (state: PokemonListState) => {
   return !state.searchingPokemon && !state.error && state.searchedPokemon;
 };
 
-// Pokemon List reducer
+// state function to check if no pokemon has been found via searching
+export const isPokemonNotFound = (state: PokemonListState) => {
+  return (
+    !state.searchingPokemon &&
+    !state.searchedPokemon &&
+    state.searchText.trim().length > 0 &&
+    state.error &&
+    state.error.includes('404')
+  );
+};
+
+// state function to check if error happens while loading pokemons
+export const hasErrorLoadingPokemons = (state: PokemonListState) => {
+  return !state.loadingPokemons && state.pokemons.length === 0 && state.error;
+};
+
+// PokemonList reducer
 const pokemonListReducer = (
   state = initialState,
   action: PokemonListAction,
@@ -81,6 +101,10 @@ const pokemonListReducer = (
           searchTextChangedAction.value.trim().length === 0
             ? undefined
             : state.searchedPokemon,
+        error:
+          searchTextChangedAction.value.trim().length === 0
+            ? undefined
+            : state.error,
       };
     // handle state changes when searching for pokemon
     case PokemonListEvents.SearchingPokemon:

@@ -10,6 +10,14 @@ export const getIdFromPokeApiUrl = (url: string) => {
 };
 
 /**
+ * Construct pokemon sprite url
+ * @param pokemonId
+ */
+export const constructPokemonSpriteUrl = (pokemonId: number) => {
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
+};
+
+/**
  * Function to flatten evolution chain
  * @param evoChain
  */
