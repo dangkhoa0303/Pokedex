@@ -82,29 +82,27 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
     // obtain the pokemon from state
     const pokemon: PokemonModel | undefined = PokemonDetailsLocalState.pokemon;
 
-    if (!pokemon) {
-      return null;
-    }
-
     // construct a uiEvolutionChains object to help displaying the evolution chains more easily
     // in this object, there will be a dummy node (evolution) between each pair of pokemons in the chain
     // this dummy node represents the arrow pointing to the next pokemon in the chain
     const uiEvolutionChains: Evolution[][] = [];
-    pokemon.evolutionChains.forEach(evoChain => {
-      const uiEvoChain: Evolution[] = [];
-      evoChain.forEach((evo, index) => {
-        uiEvoChain.push(evo);
-        if (index < evoChain.length - 1) {
-          uiEvoChain.push({
-            pokemonId: -1,
-            species: 'arrowRight',
-            speciesId: 1,
-            sprite: 'unknown',
-          });
-        }
+    if (pokemon) {
+      pokemon.evolutionChains.forEach(evoChain => {
+        const uiEvoChain: Evolution[] = [];
+        evoChain.forEach((evo, index) => {
+          uiEvoChain.push(evo);
+          if (index < evoChain.length - 1) {
+            uiEvoChain.push({
+              pokemonId: -1,
+              species: 'arrowRight',
+              speciesId: 1,
+              sprite: 'unknown',
+            });
+          }
+        });
+        uiEvolutionChains.push(uiEvoChain);
       });
-      uiEvolutionChains.push(uiEvoChain);
-    });
+    }
 
     return (
       <View style={[styles.container, styles.centered]}>
@@ -152,14 +150,14 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
               <Image
                 style={styles.mainSpriteImg}
                 source={{
-                  uri: pokemon.sprites[PokemonDetailsLocalState.spriteMode],
+                  uri: pokemon?.sprites[PokemonDetailsLocalState.spriteMode],
                 }}
               />
             </View>
 
             {/** Sprite modes section */}
             <View style={[styles.row, styles.centered, {marginBottom: 18}]}>
-              {pokemon.isGenderless ? (
+              {pokemon?.isGenderless ? (
                 <View style={[styles.row, styles.centered]}>
                   <TouchableOpacity
                     onPress={() => selectSpriteMode('frontDefault')}>
@@ -291,9 +289,9 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
               <View style={{width: 12}} />
               <Headline
                 style={{color: 'white', fontWeight: '500', fontSize: 26}}>
-                {('00' + pokemon.id).slice(-3) +
+                {('00' + pokemon?.id).slice(-3) +
                   ' ' +
-                  pokemon.name.toUpperCase()}
+                  pokemon?.name.toUpperCase()}
               </Headline>
             </View>
 
@@ -308,18 +306,18 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
               ]}>
               {/** Weight text */}
               <Text style={styles.basicInfoText}>
-                WEIGHT: {Number(pokemon.weight / 10).toFixed(1)}kg
+                WEIGHT: {Number((pokemon?.weight ?? 0) / 10).toFixed(1)}kg
               </Text>
               {/** Height text */}
               <Text style={styles.basicInfoText}>
-                HEIGHT: {Number(pokemon.height / 10).toFixed(1)}m
+                HEIGHT: {Number((pokemon?.height ?? 0) / 10).toFixed(1)}m
               </Text>
               {/** Type(s) text */}
               <Text style={styles.basicInfoText}>
-                {`TYPE: ${pokemon.types[0].toUpperCase()} ${
-                  pokemon.types.length === 1
+                {`TYPE: ${pokemon?.types[0].toUpperCase()} ${
+                  pokemon?.types.length === 1
                     ? ''
-                    : `/${pokemon.types[1].toUpperCase()}`
+                    : `/${pokemon?.types[1].toUpperCase()}`
                 }`}
               </Text>
             </View>
@@ -330,13 +328,13 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
             <View style={[styles.col, {marginLeft: 8, marginRight: 8}]}>
               {/** Pokemon gene type text */}
               <Text style={styles.sectionTitle}>
-                {pokemon.genus.toUpperCase()}
+                {pokemon?.genus.toUpperCase()}
               </Text>
               <View style={{height: 6}} />
               {/** Description text */}
               <Paragraph
                 style={{color: '#D8DFFF', fontSize: 15.5, fontWeight: '500'}}>
-                {pokemon.description}
+                {pokemon?.description}
               </Paragraph>
             </View>
 
