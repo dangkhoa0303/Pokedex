@@ -275,7 +275,7 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
             <Image
               style={{width: 24, height: 24}}
               source={{
-                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Menu%20Icons/btn_pokeball_white_shadow.png',
+                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Loading%20Spinner/SpinnerSpriteSheet_Unity_0.png',
               }}
             />
             <View style={{width: 12}} />
@@ -332,7 +332,7 @@ class PokemonDetails extends Component<PokemonDetailsProps, any> {
           </View>
 
           {/** Evolution section */}
-          <View style={[styles.col, styles.centered]}>
+          <View style={[styles.col, styles.centered, {paddingBottom: 150}]}>
             {/** Evolution section title */}
             <Text style={styles.sectionTitle}>EVOLUTION</Text>
             <View style={{height: 12}} />

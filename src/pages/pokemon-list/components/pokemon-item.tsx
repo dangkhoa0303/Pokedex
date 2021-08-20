@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PokemonListModel from '../pokemon-list-model';
-import {Image, TouchableOpacity, View} from 'react-native';
+import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import {Card, Text} from 'react-native-paper';
 import {navigate} from '../../../app-navigation/router';
 import {Routes} from '../../../app-navigation/routes';
@@ -16,44 +16,27 @@ export default class PokemonItem extends Component<ListItemProps, any> {
     const {pokemon} = this.props;
 
     return (
-      <Card
-        style={{
-          flex: 1,
-          flexDirection: 'column',
-          backgroundColor: '#E0D0ED40',
-          marginBottom: 15,
-          marginLeft: 5,
-          marginRight: 5,
-          borderBottomLeftRadius: 5,
-          borderBottomRightRadius: 5,
-        }}>
-        <View
-          style={{
-            flex: 1,
-            flexDirection: 'column',
-          }}>
-          <View
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              alignItems: 'center',
-              backgroundColor: '#B6A6D7',
-              borderTopLeftRadius: 5,
-              borderTopRightRadius: 5,
-              paddingTop: 2,
-              paddingBottom: 2,
-            }}>
+      // Card
+      <Card style={styles.card}>
+        {/** Card container */}
+        <View style={styles.cardContainer}>
+          {/** Card header */}
+          <View style={styles.itemHeader}>
             <Image
-              style={{
-                width: 26,
-                height: 26,
-              }}
+              style={styles.pokeBallHeader}
               source={{
-                uri: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png',
+                uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Menu%20Icons/btn_action_menu.png',
               }}
             />
-            <Text>No. {pokemon.id}</Text>
+            <View
+              style={{
+                width: 5,
+              }}
+            />
+            <Text>No. {('00' + pokemon.id).slice(-3)}</Text>
           </View>
+
+          {/** Card body */}
           <TouchableOpacity
             onPress={() =>
               navigate(
@@ -64,18 +47,18 @@ export default class PokemonItem extends Component<ListItemProps, any> {
                 },
               )
             }>
-            <View
-              style={{
-                flex: 3,
-                flexDirection: 'row',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}>
+            {/** Body container */}
+            <View style={styles.itemBody}>
+              {/** PokeBall background */}
               <Image
-                style={{
-                  width: 86,
-                  height: 86,
+                style={styles.itemBodyPokeBallBg}
+                source={{
+                  uri: 'https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Loading%20Spinner/SpinnerSpriteSheet_Unity_0.png',
                 }}
+              />
+              {/** Pokemon sprite */}
+              <Image
+                style={styles.pokemonSprite}
                 source={{
                   uri: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`,
                 }}
@@ -87,3 +70,54 @@ export default class PokemonItem extends Component<ListItemProps, any> {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  card: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#EED6EE',
+    marginBottom: 15,
+    marginLeft: 5,
+    marginRight: 5,
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
+  },
+  cardContainer: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  itemHeader: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#B7A3E0',
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
+    paddingTop: 4,
+    paddingBottom: 4,
+    paddingLeft: 6,
+    paddingRight: 6,
+  },
+  pokeBallHeader: {
+    width: 19,
+    height: 19,
+  },
+  itemBody: {
+    flex: 3,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 8,
+  },
+  itemBodyPokeBallBg: {
+    width: 95,
+    height: 95,
+    position: 'absolute',
+    zIndex: -1,
+    opacity: 0.3,
+  },
+  pokemonSprite: {
+    width: 82,
+    height: 82,
+  },
+});
