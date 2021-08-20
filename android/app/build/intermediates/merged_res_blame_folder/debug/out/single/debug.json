@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_btn_close_normal.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_btn_close_normal.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_male_l.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_male_l.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_shiny_icon.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_shiny_icon.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_materialcommunityicons.json"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_pokeball_white.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_pokeball_white.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_ui_bg_purple_02.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_ui_bg_purple_02.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome5free.json.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_fontawesome5free.json"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_fontawesome5free_meta.json.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_fontawesome5free_meta.json"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_holo_netpatternbg.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_holo_netpatternbg.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_genderless_l.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_genderless_l.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/raw_node_modules_reactnativevectoricons_glyphmaps_materialicons.json.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/raw/node_modules_reactnativevectoricons_glyphmaps_materialicons.json"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_female_l.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_female_l.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/build/intermediates/res/merged/debug/drawable-mdpi_assets_images_pokeball_color.png.flat",
+        "source": "/Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/res/drawable-mdpi/assets_images_pokeball_color.png"
+    }
+]

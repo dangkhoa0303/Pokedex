@@ -1,0 +1,343 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/8e1083399bfdbf90937535a9acc611aa/transformed/jetified-flipper-network-plugin-0.75.1/AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/9819462111e39577eda0b16ecb9b4233/transformed/jetified-flipper-fresco-plugin-0.75.1/AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-vector-icons] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:2:1-15:12
+MERGED from [com.facebook.react:react-native:0.64.1] /Users/khoaphung/.gradle/caches/transforms-3/922266dc7b05dc9f45760978254ab873/transformed/jetified-react-native-0.64.1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /Users/khoaphung/.gradle/caches/transforms-3/5ea3c8659f3509615daff290fb7b5562/transformed/jetified-reflow-animator-1.0.6/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/adcf4a6459df68d4e0ce015c00527baf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/307536b4026934ac444607355884c335/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9f29776704d365f4ae85170021320fd7/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/khoaphung/.gradle/caches/transforms-3/e2bde87ad2cf8775c02bb5336440c204/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /Users/khoaphung/.gradle/caches/transforms-3/40cb682250bd9a8599265616e07030ad/transformed/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/khoaphung/.gradle/caches/transforms-3/451b8aa0671fcb996b85e0a9f1aeb64a/transformed/material-1.2.0-alpha03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/bc438625369c38f8ced43f0e27f95b3a/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [org.webkit:android-jsc:r245459] /Users/khoaphung/.gradle/caches/transforms-3/e3a1bbbc4f23da66d7747560a0bcede7/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cad8ffc9ea52e20850734d23fb65834e/transformed/jetified-flipper-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/0770f52a727aaa886aac90aeae27b106/transformed/jetified-stetho-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/8c418047c428bc749a46d2059e375542/transformed/jetified-fresco-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/3fe8f7b406923ebb4d8244dcf381000d/transformed/jetified-drawee-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6646f1e64fefcb6ee25f769544a2e8fd/transformed/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d3a7507a8d57f56fbc25d0917aca9385/transformed/jetified-memory-type-native-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/ad2c65f209e5941c284a11ab40dc987c/transformed/jetified-memory-type-java-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d1619a50978432ed485ea7865ec86dd6/transformed/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/9f047ccc79b7d2cca7cc7240b2ffeb7f/transformed/jetified-soloader-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/khoaphung/.gradle/caches/transforms-3/34d56a31c3cafaa4e29ba2d9e8da3e8d/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/7d2b0c319e8abe4264bccf7dea3d8a86/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1dcb7c43b2f06d4f45cc60a7efeb74ec/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/5b291a98e7dd527772bc5f82a2242b17/transformed/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/03f50d147e70e2e87718a7dd30487304/transformed/jetified-imagepipeline-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/4d6db09ce6e8b7f5868dd0ad537eef1d/transformed/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/1c599219456659f1f9be7cb8a724c775/transformed/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/052ff047ad1b28018c19fa7b5ed1a212/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/27e0966411ff310cb9435dc0668b7e6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/717468d6abb58d6b9596b8190f3bd0e3/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1ac995f902f2b9441b906fb2a70d73de/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/ebc3283f1eab291c26a0836430f37295/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/khoaphung/.gradle/caches/transforms-3/f837e1b99ba71a31447499950b5e8f79/transformed/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /Users/khoaphung/.gradle/caches/transforms-3/25de8dc0fb9e61b31a9b6b3a0921b517/transformed/jetified-activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/b196e1355aad093d58794206b66133e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/1845d4cae68ecc09d302e8c4565d908e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/51d6165c4b4e7c89c66e74f8ac89f563/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/40077ea806b00bacd91bb322fe4d889b/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/c8b942db43020b19bc6a0a52bcff6ba3/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/85b08789b2f609ff64f6de3d90abcf68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/464b50277c639e1ec757c9a2992114c5/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/d5112a1e662b52ee0109fa2271884f05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/08489e9a9b039fd6b1b3a21cd1986951/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/1a443ed81259d1917d3e90704af8f2b4/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/6ffde23ab07c8e93c609cb7a6fb385cf/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/e7c2367bd49f6102fd877bc0c3f494d0/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6349af0c3af6272ae97b7c75521a0951/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1c1dbc0f890346f6bac6fb448cfcd7e8/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9abbf410a05e8d3a2e0e474f0a43d483/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/25e13010d25c72a404a9168464d674c1/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/6503d183e375abc94effa5b7459379d9/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/77f30ef489b4cbcd170e05e4379200ec/transformed/sqlite-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/0c351c669039df90b9fca754c7ebd840/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/khoaphung/.gradle/caches/transforms-3/59f7ab61c3e37f7d95d8010421d5e298/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/35d794d1a2551c463eb3fbe7019fdaa5/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/15d7e21b71bfe1987a21960da90dae44/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/18966da3ff8e1781ec8c309d73598759/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/dabf7d4ec2642fd77149e00856d824c6/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bb8cf03cbc1de830126013007c5cba7b/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bbba0e145603175159e3235422a584f2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/a478867d6cd595c691ce0de8360c25a9/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.clans:fab:1.6.4] /Users/khoaphung/.gradle/caches/transforms-3/58468701cf9254677df08723fef2038c/transformed/jetified-fab-1.6.4/AndroidManifest.xml:2:1-14:12
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cb51bfd274df7cdf5bee7368e311f615/transformed/jetified-fbcore-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/afedc9af5bbb157c37985b0b48e316a2/transformed/jetified-ui-common-2.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/b310a0bd2273df10c5f90cc03ee05455/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:2:1-13:12
+	package
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:2:3-24
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:4:5-67
+MERGED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:15:5-67
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-sdk
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:5:5-74
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:5:5-74
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:5:5-74
+MERGED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/8e1083399bfdbf90937535a9acc611aa/transformed/jetified-flipper-network-plugin-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/8e1083399bfdbf90937535a9acc611aa/transformed/jetified-flipper-network-plugin-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/9819462111e39577eda0b16ecb9b4233/transformed/jetified-flipper-fresco-plugin-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/9819462111e39577eda0b16ecb9b4233/transformed/jetified-flipper-fresco-plugin-0.75.1/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-vector-icons] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.react:react-native:0.64.1] /Users/khoaphung/.gradle/caches/transforms-3/922266dc7b05dc9f45760978254ab873/transformed/jetified-react-native-0.64.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.64.1] /Users/khoaphung/.gradle/caches/transforms-3/922266dc7b05dc9f45760978254ab873/transformed/jetified-react-native-0.64.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /Users/khoaphung/.gradle/caches/transforms-3/5ea3c8659f3509615daff290fb7b5562/transformed/jetified-reflow-animator-1.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wix-playground:reflow-animator:1.0.6] /Users/khoaphung/.gradle/caches/transforms-3/5ea3c8659f3509615daff290fb7b5562/transformed/jetified-reflow-animator-1.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/adcf4a6459df68d4e0ce015c00527baf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/adcf4a6459df68d4e0ce015c00527baf/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/307536b4026934ac444607355884c335/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/307536b4026934ac444607355884c335/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9f29776704d365f4ae85170021320fd7/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9f29776704d365f4ae85170021320fd7/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/khoaphung/.gradle/caches/transforms-3/e2bde87ad2cf8775c02bb5336440c204/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/khoaphung/.gradle/caches/transforms-3/e2bde87ad2cf8775c02bb5336440c204/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /Users/khoaphung/.gradle/caches/transforms-3/40cb682250bd9a8599265616e07030ad/transformed/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /Users/khoaphung/.gradle/caches/transforms-3/40cb682250bd9a8599265616e07030ad/transformed/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/khoaphung/.gradle/caches/transforms-3/451b8aa0671fcb996b85e0a9f1aeb64a/transformed/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/khoaphung/.gradle/caches/transforms-3/451b8aa0671fcb996b85e0a9f1aeb64a/transformed/material-1.2.0-alpha03/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/bc438625369c38f8ced43f0e27f95b3a/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/bc438625369c38f8ced43f0e27f95b3a/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/khoaphung/.gradle/caches/transforms-3/e3a1bbbc4f23da66d7747560a0bcede7/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] /Users/khoaphung/.gradle/caches/transforms-3/e3a1bbbc4f23da66d7747560a0bcede7/transformed/jetified-android-jsc-r245459/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cad8ffc9ea52e20850734d23fb65834e/transformed/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cad8ffc9ea52e20850734d23fb65834e/transformed/jetified-flipper-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/0770f52a727aaa886aac90aeae27b106/transformed/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/0770f52a727aaa886aac90aeae27b106/transformed/jetified-stetho-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/8c418047c428bc749a46d2059e375542/transformed/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/8c418047c428bc749a46d2059e375542/transformed/jetified-fresco-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/3fe8f7b406923ebb4d8244dcf381000d/transformed/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/3fe8f7b406923ebb4d8244dcf381000d/transformed/jetified-drawee-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6646f1e64fefcb6ee25f769544a2e8fd/transformed/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6646f1e64fefcb6ee25f769544a2e8fd/transformed/jetified-nativeimagefilters-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d3a7507a8d57f56fbc25d0917aca9385/transformed/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d3a7507a8d57f56fbc25d0917aca9385/transformed/jetified-memory-type-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/ad2c65f209e5941c284a11ab40dc987c/transformed/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/ad2c65f209e5941c284a11ab40dc987c/transformed/jetified-memory-type-java-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d1619a50978432ed485ea7865ec86dd6/transformed/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/d1619a50978432ed485ea7865ec86dd6/transformed/jetified-imagepipeline-native-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/9f047ccc79b7d2cca7cc7240b2ffeb7f/transformed/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/9f047ccc79b7d2cca7cc7240b2ffeb7f/transformed/jetified-soloader-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/khoaphung/.gradle/caches/transforms-3/34d56a31c3cafaa4e29ba2d9e8da3e8d/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/khoaphung/.gradle/caches/transforms-3/34d56a31c3cafaa4e29ba2d9e8da3e8d/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/7d2b0c319e8abe4264bccf7dea3d8a86/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/7d2b0c319e8abe4264bccf7dea3d8a86/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1dcb7c43b2f06d4f45cc60a7efeb74ec/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1dcb7c43b2f06d4f45cc60a7efeb74ec/transformed/jetified-imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/5b291a98e7dd527772bc5f82a2242b17/transformed/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/5b291a98e7dd527772bc5f82a2242b17/transformed/jetified-memory-type-ashmem-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/03f50d147e70e2e87718a7dd30487304/transformed/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/03f50d147e70e2e87718a7dd30487304/transformed/jetified-imagepipeline-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/4d6db09ce6e8b7f5868dd0ad537eef1d/transformed/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/4d6db09ce6e8b7f5868dd0ad537eef1d/transformed/jetified-nativeimagetranscoder-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/1c599219456659f1f9be7cb8a724c775/transformed/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/1c599219456659f1f9be7cb8a724c775/transformed/jetified-imagepipeline-base-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/052ff047ad1b28018c19fa7b5ed1a212/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/khoaphung/.gradle/caches/transforms-3/052ff047ad1b28018c19fa7b5ed1a212/transformed/jetified-appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/27e0966411ff310cb9435dc0668b7e6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/27e0966411ff310cb9435dc0668b7e6d/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/717468d6abb58d6b9596b8190f3bd0e3/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/717468d6abb58d6b9596b8190f3bd0e3/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1ac995f902f2b9441b906fb2a70d73de/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1ac995f902f2b9441b906fb2a70d73de/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/ebc3283f1eab291c26a0836430f37295/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/ebc3283f1eab291c26a0836430f37295/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/khoaphung/.gradle/caches/transforms-3/f837e1b99ba71a31447499950b5e8f79/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/khoaphung/.gradle/caches/transforms-3/f837e1b99ba71a31447499950b5e8f79/transformed/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/khoaphung/.gradle/caches/transforms-3/25de8dc0fb9e61b31a9b6b3a0921b517/transformed/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/khoaphung/.gradle/caches/transforms-3/25de8dc0fb9e61b31a9b6b3a0921b517/transformed/jetified-activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/b196e1355aad093d58794206b66133e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/b196e1355aad093d58794206b66133e4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/1845d4cae68ecc09d302e8c4565d908e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/1845d4cae68ecc09d302e8c4565d908e/transformed/jetified-lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/51d6165c4b4e7c89c66e74f8ac89f563/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/51d6165c4b4e7c89c66e74f8ac89f563/transformed/jetified-savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/40077ea806b00bacd91bb322fe4d889b/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/40077ea806b00bacd91bb322fe4d889b/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/c8b942db43020b19bc6a0a52bcff6ba3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/c8b942db43020b19bc6a0a52bcff6ba3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/85b08789b2f609ff64f6de3d90abcf68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/85b08789b2f609ff64f6de3d90abcf68/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/464b50277c639e1ec757c9a2992114c5/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/464b50277c639e1ec757c9a2992114c5/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/d5112a1e662b52ee0109fa2271884f05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/d5112a1e662b52ee0109fa2271884f05/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/08489e9a9b039fd6b1b3a21cd1986951/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/08489e9a9b039fd6b1b3a21cd1986951/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/1a443ed81259d1917d3e90704af8f2b4/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/1a443ed81259d1917d3e90704af8f2b4/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/6ffde23ab07c8e93c609cb7a6fb385cf/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/6ffde23ab07c8e93c609cb7a6fb385cf/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/e7c2367bd49f6102fd877bc0c3f494d0/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/e7c2367bd49f6102fd877bc0c3f494d0/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6349af0c3af6272ae97b7c75521a0951/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/khoaphung/.gradle/caches/transforms-3/6349af0c3af6272ae97b7c75521a0951/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1c1dbc0f890346f6bac6fb448cfcd7e8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/1c1dbc0f890346f6bac6fb448cfcd7e8/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9abbf410a05e8d3a2e0e474f0a43d483/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/9abbf410a05e8d3a2e0e474f0a43d483/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/25e13010d25c72a404a9168464d674c1/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/25e13010d25c72a404a9168464d674c1/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/6503d183e375abc94effa5b7459379d9/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/6503d183e375abc94effa5b7459379d9/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/77f30ef489b4cbcd170e05e4379200ec/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/77f30ef489b4cbcd170e05e4379200ec/transformed/sqlite-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/0c351c669039df90b9fca754c7ebd840/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/0c351c669039df90b9fca754c7ebd840/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/khoaphung/.gradle/caches/transforms-3/59f7ab61c3e37f7d95d8010421d5e298/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/khoaphung/.gradle/caches/transforms-3/59f7ab61c3e37f7d95d8010421d5e298/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/35d794d1a2551c463eb3fbe7019fdaa5/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/khoaphung/.gradle/caches/transforms-3/35d794d1a2551c463eb3fbe7019fdaa5/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/15d7e21b71bfe1987a21960da90dae44/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/khoaphung/.gradle/caches/transforms-3/15d7e21b71bfe1987a21960da90dae44/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/18966da3ff8e1781ec8c309d73598759/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/khoaphung/.gradle/caches/transforms-3/18966da3ff8e1781ec8c309d73598759/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/dabf7d4ec2642fd77149e00856d824c6/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/dabf7d4ec2642fd77149e00856d824c6/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bb8cf03cbc1de830126013007c5cba7b/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bb8cf03cbc1de830126013007c5cba7b/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bbba0e145603175159e3235422a584f2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/bbba0e145603175159e3235422a584f2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/a478867d6cd595c691ce0de8360c25a9/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/khoaphung/.gradle/caches/transforms-3/a478867d6cd595c691ce0de8360c25a9/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.clans:fab:1.6.4] /Users/khoaphung/.gradle/caches/transforms-3/58468701cf9254677df08723fef2038c/transformed/jetified-fab-1.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.4] /Users/khoaphung/.gradle/caches/transforms-3/58468701cf9254677df08723fef2038c/transformed/jetified-fab-1.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cb51bfd274df7cdf5bee7368e311f615/transformed/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/cb51bfd274df7cdf5bee7368e311f615/transformed/jetified-fbcore-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/afedc9af5bbb157c37985b0b48e316a2/transformed/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] /Users/khoaphung/.gradle/caches/transforms-3/afedc9af5bbb157c37985b0b48e316a2/transformed/jetified-ui-common-2.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/b310a0bd2273df10c5f90cc03ee05455/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/khoaphung/.gradle/caches/transforms-3/b310a0bd2273df10c5f90cc03ee05455/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:5:5-74
+INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:5:5-74
+	android:targetSdkVersion
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:5:42-71
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:5:15-41
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml
+application
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:7:5-25:19
+MERGED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:7:5-25:19
+MERGED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:7:5-25:19
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:9:5-13:19
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:9:5-13:19
+MERGED from [com.facebook.react:react-native:0.64.1] /Users/khoaphung/.gradle/caches/transforms-3/922266dc7b05dc9f45760978254ab873/transformed/jetified-react-native-0.64.1/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.64.1] /Users/khoaphung/.gradle/caches/transforms-3/922266dc7b05dc9f45760978254ab873/transformed/jetified-react-native-0.64.1/AndroidManifest.xml:11:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/khoaphung/.gradle/caches/transforms-3/e2bde87ad2cf8775c02bb5336440c204/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/khoaphung/.gradle/caches/transforms-3/e2bde87ad2cf8775c02bb5336440c204/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /Users/khoaphung/.gradle/caches/transforms-3/40cb682250bd9a8599265616e07030ad/transformed/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:11:5-20
+MERGED from [com.github.wix-playground:ahbottomnavigation:3.3.0] /Users/khoaphung/.gradle/caches/transforms-3/40cb682250bd9a8599265616e07030ad/transformed/jetified-ahbottomnavigation-3.3.0/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/khoaphung/.gradle/caches/transforms-3/451b8aa0671fcb996b85e0a9f1aeb64a/transformed/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha03] /Users/khoaphung/.gradle/caches/transforms-3/451b8aa0671fcb996b85e0a9f1aeb64a/transformed/material-1.2.0-alpha03/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/khoaphung/.gradle/caches/transforms-3/34d56a31c3cafaa4e29ba2d9e8da3e8d/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] /Users/khoaphung/.gradle/caches/transforms-3/34d56a31c3cafaa4e29ba2d9e8da3e8d/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/khoaphung/.gradle/caches/transforms-3/59f7ab61c3e37f7d95d8010421d5e298/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/khoaphung/.gradle/caches/transforms-3/59f7ab61c3e37f7d95d8010421d5e298/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.clans:fab:1.6.4] /Users/khoaphung/.gradle/caches/transforms-3/58468701cf9254677df08723fef2038c/transformed/jetified-fab-1.6.4/AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.4] /Users/khoaphung/.gradle/caches/transforms-3/58468701cf9254677df08723fef2038c/transformed/jetified-fab-1.6.4/AndroidManifest.xml:12:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/khoaphung/.gradle/caches/transforms-3/d0bb01fb8740f3cf41c8246fc5631a01/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:9:7-39
+	tools:ignore
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:10:9-48
+	android:roundIcon
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:11:7-52
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:11:7-52
+	tools:targetApi
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:9:9-29
+	android:icon
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:12:7-34
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:12:7-34
+	android:theme
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:13:7-38
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:13:7-38
+	android:usesCleartextTraffic
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:8:9-44
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.pokedex.MainActivity
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:14:7-24:18
+	android:label
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:16:9-41
+	android:launchMode
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:18:9-40
+	android:windowSoftInputMode
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:19:9-51
+	android:configChanges
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:17:9-86
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:15:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:20:9-23:25
+action#android.intent.action.MAIN
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:21:13-65
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:21:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:22:13-73
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/main/AndroidManifest.xml:22:23-70
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:5:22-75
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:11:9-86
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:10:9-12:40
+MERGED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:10:9-12:40
+	android:exported
+		ADDED from [:react-native-navigation] /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/node_modules/react-native-navigation/lib/android/app/build/intermediates/merged_manifest/reactNative63Debug/AndroidManifest.xml:12:13-37
+	android:name
+		ADDED from /Users/khoaphung/Documents/MyPersonalProjects/Pokedex/android/app/src/debug/AndroidManifest.xml:11:19-83
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from [com.facebook.flipper:flipper:0.75.1] /Users/khoaphung/.gradle/caches/transforms-3/d56c2c9227ccf602cf532311b8760ca0/transformed/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
